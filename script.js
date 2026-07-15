@@ -59,5 +59,11 @@ celebrateButton?.addEventListener('click', startCelebrationRain);
 window.addEventListener('load', () => {
   observeRevealElements();
   startAmbientGarden();
-  setTimeout(closeWelcome, 3200);
+
+const music = document.getElementById('birthdayMusic');
+
+startExperience?.addEventListener('click', () => {
+    music.play();
+    closeWelcome();
+});
 });
