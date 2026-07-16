@@ -1,6 +1,6 @@
 :root {
   color-scheme: light;
-  
+
   --yellow: #F4C430;
   --gold: #D8A727;
   --deep-gold: #A97812;
@@ -15,15 +15,30 @@
   --body-font: 'Inter', system-ui, sans-serif;
 }
 
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+  background-color: var(--white);
+}
+
 body {
   margin: 0;
   min-height: 100vh;
   overflow-x: hidden;
   color: var(--dark);
   font-family: var(--body-font);
-  background: linear-gradient(135deg, var(--white), var(--beige) 42%, #fff3c9 100%);
+  color-scheme: light;
+  background-color: var(--white);
+  background-image: linear-gradient(
+    135deg,
+    var(--white),
+    var(--beige) 42%,
+    #fff3c9 100%
+  );
 }
 
 body.ready .welcome-screen { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(-18px); }
